@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s: %(message)s')
 # Configurations
 WHISPER_LANGUAGE = "en"  # Change this to your target language
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "..."
 AUDIO_FILENAME = "input_audio.wav"
 STT_MODEL = "whisper-large-v3-turbo"
 PROCESS_EVERY = 5  # Process every 5 chunks for lower latency
