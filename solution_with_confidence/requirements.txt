@@ -1,0 +1,7 @@
+azure_storage==0.37.0
+groq==0.18.0
+numpy==2.2.3
+PyAudio==0.2.14
+pydub==0.25.1
+python-dotenv==1.0.1
+websockets==12.0
