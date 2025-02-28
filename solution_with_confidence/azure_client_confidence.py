@@ -36,7 +36,7 @@ async def send_ping(websocket, speaker_id):
             await websocket.ping()
             await asyncio.sleep(20)  # Ping every 20 seconds
         except Exception as e:
-            print(f"⚠️ Speaker {speaker_id} Ping failed: {e}")
+            print(f" Speaker {speaker_id} Ping failed: {e}")
             break
 
 async def send_audio():
@@ -59,7 +59,7 @@ async def send_audio():
         try:
             ws = await websockets.connect(WS_SERVER, open_timeout=60, ping_interval=20, ping_timeout=30)
             websockets_dict[speaker_id] = ws
-            print(f"🔵 Speaker {speaker_id} connected to WebSocket server")
+            print(f" Speaker {speaker_id} connected to WebSocket server")
 
             # Start periodic ping task
             asyncio.create_task(send_ping(ws, speaker_id))
